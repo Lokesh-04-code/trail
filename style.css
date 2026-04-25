@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main container */
+.app {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Glass card */
+.card {
+    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+}
+
+/* Title */
+.card h1 {
+    margin-bottom: 20px;
+}
+
+/* Search box */
+.search {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.search input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 10px 0 0 10px;
+    outline: none;
+}
+
+.search button {
+    padding: 10px 15px;
+    border: none;
+    background: #00c6ff;
+    color: white;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search button:hover {
+    background: #0072ff;
+}
+
+/* Weather info */
+.weather h2 {
+    font-size: 28px;
+}
+
+.weather h3 {
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+.weather p {
+    font-size: 18px;
+    opacity: 0.8;
+}
